@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <title>simple form page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() { $("#datepicker").datepicker(); });
+    </script>
+</head>
+<body>
+<!--<form action="{{ url_for('regd') }}" method="post">-->
+<div class="panel panel-primary" align="right">
+      <div class="panel-heading"><strong>Sign Up!</strong></div>
+      <div class="panel-body">
+          <div align="right" style="float: right;">
+          <form action="/regd" method="get" >
+                <div class="form-group" align="left">
+                   <label>Name: </label>
+                    <input type="text" placeholder="First name" id="fname">
+                    <input type="text" placeholder="Middle name" id="mname">
+                    <input type="text" placeholder="Last name" id="lname">
+                </div>
+                <div class="form-group" align="left">
+                   <label>NT ID: </label>
+                    <input type="text" placeholder="Enter your NT ID" id="ntid">
+                </div>
+                <div class="form-group" align="left">
+                    <label>Phone Number: </label>
+                    <input type="Phone Number" placeholder="809-3131-531" id="phno">
+                </div>
+
+                   <div class="dropdown" align="left">
+                     <label>Your Role </label>
+                     <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Select
+                         your role
+                         <span class="caret"></span></button>
+                          <ul class="dropdown-menu">
+                          <li><a href="#">Project Engineer</a></li>
+                          <li><a href="#">Manager</a></li>
+                          <li><a href="#">Lead</a></li>
+                          <li><a href="#">Others</a></li>
+                        </ul>
+                      </div>
+                <div>
+                    <label>Date of birth </label>
+                    <input id="datepicker" />
+                </div>
+
+
+        </form>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>
